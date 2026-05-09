@@ -1,67 +1,193 @@
-# Backtracking Project
+# 🧠 DSA Visualizer – Algorithm Learning Lab
 
-## Table of Contents
-![Screenshot 2023-09-22 101220](https://github.com/Mayank-Garg7/Backtracking/assets/113042462/3a9fd3fb-0282-45a0-bb20-4372ac36ff0d)
+A full-stack interactive **Data Structures & Algorithms visualizer** that helps users understand how sorting algorithms work step-by-step using real-time animations.
 
-- [Introduction](#introduction)
-- [Project Description](#project-description)
-- [Usage](#usage)
-- [File Structure](#file-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-This project demonstrates the concept of backtracking through a simple HTML page with accompanying CSS styles. Backtracking is a form of recursion used to solve problems where you have to make a series of choices that affect the final outcome.
-
-The project includes an HTML page that explains the backtracking concept with text and an example tree diagram. The HTML structure and content are defined in `index.html`, and the CSS styles are defined in `index.css`.
-
-## Project Description
-
-The project consists of an HTML page that explains the backtracking concept using text and images. Here's an overview of what's included:
-
-- **HTML Page**: The main content of the project is contained in `index.html`. It provides an explanation of the backtracking concept, its application, and an example scenario with a decision tree.
-
-- **CSS Styles**: The CSS styles to format the HTML content are defined in `index.css`.
-- 
-![Screenshot 2023-09-22 101259](https://github.com/Mayank-Garg7/Backtracking/assets/113042462/44b0e886-c1b2-45a0-b94b-af3d9fbc0b5c)
-
-## Usage
-
-To view and interact with the backtracking explanation, simply open the `index.html` file in a web browser. The HTML page provides detailed information about how backtracking works and includes an example scenario with a decision tree.
-
-You can also customize the content and styles in `index.html` and `index.css` to suit your needs.
-
-## File Structure
-
-The project has the following file structure:
-
-```
-/
-├── index.html
-├── index.css
-├── tree.png
-└── README.md
-```
-
-- `index.html`: Contains the main content of the project.
-- `index.css`: Defines the CSS styles for formatting the HTML content.
-- `tree.png`: An image used in the explanation.
-- `README.md`: This README file.
-
-## Contributing
-
-Contributions to this project are welcome! If you have any suggestions, improvements, or bug fixes, please submit them as issues or pull requests on the project's [GitHub repository](https://github.com/your-repository-link).
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Built using:
+- ⚛️ React (Vite + Tailwind CSS)
+- 🚀 FastAPI (Python backend)
+- 📊 Algorithm step-engine (custom implementation)
 
 ---
 
-Feel free to modify and expand upon this README file to provide more information about your specific backtracking project. Make sure to replace placeholders with actual links and details relevant to your project.
-![Screenshot 2023-09-22 101327](https://github.com/Mayank-Garg7/Backtracking/assets/113042462/7c332e31-9c47-463b-b68e-94ebb2916cdf)
+## ✨ Features
+
+### 🎯 Core Features
+- Step-by-step visualization of sorting algorithms
+- Bubble Sort, Merge Sort, Quick Sort support
+- Real-time animation of comparisons and swaps
+- Step counter + progress tracking
+- Algorithm selector (dropdown)
+
+### 🎮 Controls System
+- ▶️ Play / ⏸ Pause animation
+- 🎚 Speed control slider
+- 🔄 Step-by-step navigation
+- 🚀 Start sorting button
+
+### 📊 Educational Features
+- Current operation display (comparison/swapping)
+- Step counter (e.g., Step 5 of 24)
+- Visual highlighting of active elements
+- Big-O friendly structure (for teaching)
 
 ---
-## Feel free
-Feel free to ask any doubt. download and clone this project and learn something new.
+
+## 🏗️ Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- JavaScript (ES6+)
+
+### Backend
+- FastAPI
+- Python 3
+- Custom sorting algorithm engine
+
+---
+
+## 📁 Project Structure
+
+```
+
+visualizer-frontend/
+├── src/
+│   ├── components/
+│   │   ├── Visualizer.jsx
+│   │   ├── Controls.jsx
+│   │   ├── Bar.jsx
+│   │   ├── StatsPanel.jsx
+│   │   └── ActionDisplay.jsx
+│   └── pages/
+
+visualizer_backend/
+├── app/
+│   ├── api/routes/
+│   │   └── sorting.py
+│   └── algorithms/
+│       ├── sorting.py
+│       ├── merge_sort.py
+│       └── quick_sort.py
+
+````
+
+---
+
+## 🚀 How to Run the Project
+
+### 1️⃣ Backend (FastAPI)
+
+```bash
+cd visualizer_backend
+python -m venv venv
+venv\Scripts\activate   # (Windows)
+# source venv/bin/activate (Mac/Linux)
+
+pip install fastapi uvicorn
+uvicorn app.main:app --reload
+````
+
+Backend runs at:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+### 2️⃣ Frontend (React)
+
+```bash
+cd visualizer-frontend
+npm install
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔗 API Endpoints
+
+| Algorithm   | Endpoint       |
+| ----------- | -------------- |
+| Bubble Sort | `/sort/bubble` |
+| Merge Sort  | `/sort/merge`  |
+| Quick Sort  | `/sort/quick`  |
+
+---
+
+## 🧠 Learning Outcomes
+
+This project demonstrates:
+
+* Algorithm visualization techniques
+* Step-based state management
+* Full-stack API integration
+* React component architecture
+* Real-time UI updates
+* Educational UX design for DSA concepts
+
+---
+
+## 📸 UI Preview
+
+> Add screenshots here (recommended for GitHub)
+
+---
+
+## 🔥 Future Improvements
+
+* Pathfinding visualizer (Dijkstra, BFS, DFS)
+* Array generator (random + custom input)
+* Sound effects for swaps
+* Comparison counter (Big-O visualization)
+* Export animation as GIF/video
+
+---
+
+## 👨‍💻 Author
+
+[Mayank Garg](https://www.github.com/mayank-garg7)
+Built by a Python + Frontend Developer focused on:
+
+* DSA teaching tools
+* Full-stack development
+* Interactive learning systems
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ and feel free to fork it!
+
+---
+
+# 🐳 docker-compose.yml 
+
+```yaml
+version: "3.9"
+
+services:
+
+  backend:
+    build: ./visualizer_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./visualizer_backend:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --reload
+
+  frontend:
+    build: ./visualizer-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./visualizer-frontend:/app
+    command: npm run dev
+````
+
