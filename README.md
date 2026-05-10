@@ -136,7 +136,8 @@ This project demonstrates:
 
 ## 📸 UI Preview
 
-> Add screenshots here (recommended for GitHub)
+<img width="1339" height="649" alt="just saved" src="https://github.com/user-attachments/assets/7ae57dee-4fc1-4be9-8824-e40d51960c39" />
+
 
 ---
 
