@@ -87,7 +87,7 @@ const Visualizer = () => {
       setIsSwapping(false);
       pause();
       const response = await fetch(
-        `http://127.0.0.1:8000/sort/${algorithm}`,
+        `https://dsa-visualizer-lab-1.onrender.com/sort/${algorithm}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
